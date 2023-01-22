@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    background-color: #F2EBE3;
+}
+
+#container{
+   
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: auto;
+    background-color:#FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#desktop{
+    display: none;
+}
+
+/* Edit Image Here */
+#img{
+    
+    width: 100%;
+    height: 100%;
+   
+}
+img{
+    width: 100%;
+    height: auto;  
+}
+
+/* 
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; 
+ Edit Text design here */
+#text-part{ 
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#text-part #title{
+    padding-top:20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1cm;
+    padding-bottom:10px;
+    font-family: 'Montserrat', sans-serif; 
+    color:#6C7289;
+    font-weight:400;
+    font-size: 14px;
+}
+
+#text-part h1{
+    font-family: 'Fraunces', serif;
+    padding-bottom:20px;
+}
+
+#text-part #para{
+    padding-bottom:30px;
+    font-family: 'Montserrat', sans-serif; 
+    color:#6C7289;
+    font-weight:400;
+    font-size: 14px;
+}
+
+#tag{
+    display: flex;
+    
+}
+
+#tag h1{
+    font-family: 'Fraunces', serif;
+    color:#297743;
+}
+
+#tag p{
+    position: relative;
+    top:14px;
+    left: 20px; 
+    color:#6C7289;  
+    text-decoration:line-through;
+}
+
+/* Edit BUtton Here */
+button{
+    width: 100%;
+    padding:13px 0;
+    font-family: 'Montserrat', sans-serif; 
+    border-style: none;
+    border-radius:5px;
+    background-color:#297743;
+    color:white;
+}
+span{
+    padding-right:10px
+}
+
+@media(min-width:376px){
+    #container{
+        margin:10% 30%;
+        width: 760px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #mobile{
+        display: none;
+    }
+
+    #desktop{
+        display:block;
+    }
+
+    /* edit image */
+    #img{
+        flex-basis: 45%;   
+    }
+
+    /* eidt text */
+    #text-part{ 
+     flex-basis: 50%;
+     padding-left:10%;
+     padding-right:10%;
+    }
+    #text-part #title{
+        padding-top: 23%;
+        padding-bottom: 10%;
+    }
+
+    #text-part h1{
+        padding-bottom: 10%;
+    }
+    #text-part #para{
+        padding-bottom:20%
+    }
+    #text-part #tag{
+        padding-bottom: 6%;
+    }
+    #tag p{
+    color:#6C7289;  
+    text-decoration:line-through;
+    }
+}
